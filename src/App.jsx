@@ -1,5 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+
 import { About } from "./Components/About/About";
 import { Contact } from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
@@ -11,9 +13,10 @@ export default function App() {
   const router = createBrowserRouter(
     [
       {
-        path: "",
+        path: "/React-Project-One/",
         element: <Layout />,
         children: [
+          { path: "", element: <Navigate to="startFramework" replace /> },
           { path: "startFramework", element: <Home /> },
           { path: "about", element: <About /> },
           { path: "portfolio", element: <Portfolio /> },
@@ -29,7 +32,7 @@ export default function App() {
         ],
       },
     ],
-    { basename: "/React-Project-One" } // هذا هو المسار الأساسي
+
   );
 
   return (
