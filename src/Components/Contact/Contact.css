@@ -1,0 +1,38 @@
+.section-contact .line-star {
+    position: relative;
+}
+
+.section-contact .line-star::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #000;
+    left: 3rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.section-contact .line-star .fa-star {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.section-contact .line-star::before {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #000;
+    right: 3rem;
+    position: absolute;
+    top: 1rem;
+}
+
+form .form-group {
+    margin-bottom: 2rem;
+}
+form .form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #dee2e6;
+}
+

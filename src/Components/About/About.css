@@ -1,0 +1,38 @@
+.about-section {
+    /* background-color: #18bc9c; */
+    color: white;
+    padding: 2rem;
+}
+/* .about-section .body-content{
+    margin: 100px 0px;
+} */
+.about-section .title-about h2{
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+.about-section .line-star{
+    position: relative;
+}
+.about-section .line-star::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #fff;
+    left: 3rem;
+    position: absolute;
+    top: 1rem;
+}
+.about-section .line-star .fa-star {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+.about-section .line-star::before{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #fff;
+    right: 3rem;
+    position: absolute;
+    top: 1rem;
+}
