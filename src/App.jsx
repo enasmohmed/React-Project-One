@@ -15,6 +15,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="" element={<Layout />}>
+            <Route path="/" element={<Navigate to="/startFramework" />} />
             <Route path="startFramework" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
